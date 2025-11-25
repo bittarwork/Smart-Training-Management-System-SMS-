@@ -1,0 +1,25 @@
+{
+  "name": "smart-training-management-system",
+  "version": "1.0.0",
+  "description": "Intelligent Training Management System with ML-based recommendations",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "ml": "cd ml-engine && python app.py",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install"
+  },
+  "keywords": [
+    "training",
+    "management",
+    "machine-learning",
+    "mern"
+  ],
+  "author": "Nawar fawzi alodah",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
+

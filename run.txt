@@ -1,0 +1,12 @@
+cd client
+npm run dev
+------------
+cd server
+npm run seed
+----------
+cd server
+npm run dev
+------------
+cd ml-engine
+./venv/Scripts/Activate
+py app.py
